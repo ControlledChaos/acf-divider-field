@@ -2,7 +2,6 @@
 
 class acf_field_divider extends acf_field {
 
-
 	/*
 	*  __construct
 	*
@@ -62,7 +61,6 @@ class acf_field_divider extends acf_field {
 
 	}
 
-
 	/*
 	*  render_field_settings()
 	*
@@ -103,8 +101,6 @@ class acf_field_divider extends acf_field {
 
 	}
 
-
-
 	/*
 	*  render_field()
 	*
@@ -126,7 +122,6 @@ class acf_field_divider extends acf_field {
 		echo "<h2 class='acf-divider-heading' $customCSS><span>$label</span></h2>";
 	}
 
-
 	/*
 	*  input_admin_enqueue_scripts()
 	*
@@ -147,21 +142,17 @@ class acf_field_divider extends acf_field {
 
 		$dir = plugin_dir_url( __FILE__ );
 
-
 		// register & include JS
 		wp_register_script( 'acf-input-divider', "{$dir}js/input.js" );
 		wp_enqueue_script('acf-input-divider');
-
 
 		// register & include CSS
 		wp_register_style( 'acf-input-divider', "{$dir}css/input.css" );
 		wp_enqueue_style('acf-input-divider');
 
-
 	}
 
 	*/
-
 
 	/*
 	*  input_admin_head()
@@ -177,13 +168,10 @@ class acf_field_divider extends acf_field {
 	*  @return	n/a
 	*/
 
-
-
 	function input_admin_head() {
 		wp_enqueue_style( "acf-input-divider", plugin_dir_url( __FILE__ ) . 'css/input.css');
 		wp_enqueue_style('acf-input-divider');
 	}
-
 
 	/*
    	*  input_form_data()
@@ -211,7 +199,6 @@ class acf_field_divider extends acf_field {
    	}
 
    	*/
-
 
 	/*
 	*  input_admin_footer()
