@@ -1,8 +1,8 @@
 <?php
 
 /*
-Plugin Name: Advanced Custom Fields: Divider
-Plugin URI: PLUGIN_URL
+Plugin Name: ACF Divider
+Plugin URI: https://github.com/ControlledChaos/acf-divider-field
 Description: An divider field that lets you group multiple fields under an divider.
 Version: 1.0.0
 Author: Kreshnik Hasanaj
