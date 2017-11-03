@@ -2,8 +2,6 @@
 
 An divider field that lets you group multiple fields under an divider.
 
-![Preview](divider.png)
-
 ### Compatibility
 
 This ACF field type is compatible with:
