@@ -6,7 +6,6 @@ class acf_field_divider extends acf_field {
 	var $settings, // will hold info such as dir / path
 		$defaults; // will hold default field options
 
-
 	/*
 	*  __construct
 	*
@@ -16,8 +15,7 @@ class acf_field_divider extends acf_field {
 	*  @date	23/01/13
 	*/
 
-	function __construct()
-	{
+	function __construct() {
 		// vars
 		$this->name = 'divider';
 		$this->label = __('Divider');
@@ -42,7 +40,6 @@ class acf_field_divider extends acf_field {
 
 	}
 
-
 	/*
 	*  create_options()
 	*
@@ -56,8 +53,7 @@ class acf_field_divider extends acf_field {
 	*  @param	$field	- an array holding all the field's data
 	*/
 
-	function create_options( $field )
-	{
+	function create_options( $field ) {
 		// defaults?
 		/*
 		$field = array_merge($this->defaults, $field);
@@ -108,8 +104,7 @@ class acf_field_divider extends acf_field {
 	*  @date	23/01/13
 	*/
 
-	function create_field( $field )
-	{
+	function create_field( $field ) {
 		// defaults?
 		/*
 		$field = array_merge($this->defaults, $field);
@@ -139,8 +134,7 @@ class acf_field_divider extends acf_field {
 	*  @date	23/01/13
 	*/
 
-	function input_admin_enqueue_scripts()
-	{
+	function input_admin_enqueue_scripts() {
 		// Note: This function can be removed if not used
 
 
@@ -175,8 +169,7 @@ class acf_field_divider extends acf_field {
 	*  @date	23/01/13
 	*/
 
-	function input_admin_head()
-	{
+	function input_admin_head() {
 		// Note: This function can be removed if not used
 	}
 
@@ -193,8 +186,7 @@ class acf_field_divider extends acf_field {
 	*  @date	23/01/13
 	*/
 
-	function field_group_admin_enqueue_scripts()
-	{
+	function field_group_admin_enqueue_scripts() {
 		// Note: This function can be removed if not used
 	}
 
@@ -211,8 +203,7 @@ class acf_field_divider extends acf_field {
 	*  @date	23/01/13
 	*/
 
-	function field_group_admin_head()
-	{
+	function field_group_admin_head() {
 		// Note: This function can be removed if not used
 	}
 
@@ -233,8 +224,7 @@ class acf_field_divider extends acf_field {
 	*  @return	$value - the value to be saved in the database
 	*/
 
-	function load_value( $value, $post_id, $field )
-	{
+	function load_value( $value, $post_id, $field ) {
 		// Note: This function can be removed if not used
 		return $value;
 	}
@@ -256,8 +246,7 @@ class acf_field_divider extends acf_field {
 	*  @return	$value - the modified value
 	*/
 
-	function update_value( $value, $post_id, $field )
-	{
+	function update_value( $value, $post_id, $field ) {
 		// Note: This function can be removed if not used
 		return $value;
 	}
@@ -279,8 +268,7 @@ class acf_field_divider extends acf_field {
 	*  @return	$value	- the modified value
 	*/
 
-	function format_value( $value, $post_id, $field )
-	{
+	function format_value( $value, $post_id, $field ) {
 		// defaults?
 		/*
 		$field = array_merge($this->defaults, $field);
@@ -310,8 +298,7 @@ class acf_field_divider extends acf_field {
 	*  @return	$value	- the modified value
 	*/
 
-	function format_value_for_api( $value, $post_id, $field )
-	{
+	function format_value_for_api( $value, $post_id, $field ) {
 		// defaults?
 		/*
 		$field = array_merge($this->defaults, $field);
@@ -339,8 +326,7 @@ class acf_field_divider extends acf_field {
 	*  @return	$field - the field array holding all the field options
 	*/
 
-	function load_field( $field )
-	{
+	function load_field( $field ) {
 		// Note: This function can be removed if not used
 		return $field;
 	}
@@ -361,8 +347,7 @@ class acf_field_divider extends acf_field {
 	*  @return	$field - the modified field
 	*/
 
-	function update_field( $field, $post_id )
-	{
+	function update_field( $field, $post_id ) {
 		// Note: This function can be removed if not used
 		return $field;
 	}
@@ -373,5 +358,3 @@ class acf_field_divider extends acf_field {
 
 // create field
 new acf_field_divider();
-
-?>
